@@ -1,1 +1,1 @@
-xinput --set-prop 13 303 -0.8
+xinput --set-prop 9 309 -0.8

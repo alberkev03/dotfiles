@@ -27,8 +27,8 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_up = "說 Online"
-        format_down = "ﲁ Offline"
+        format_up = "󰒢 Online"
+        format_down = "󰞃 Offline"
 }
 
 battery all {
@@ -36,7 +36,7 @@ battery all {
 }
 
 disk "/home" {
-        format = " %avail"
+        format = " %avail"
 }
 
 load {
@@ -44,23 +44,23 @@ load {
 }
 
 memory {
-        format = "﬙ %used"
+        format = "󰘚 %used"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = " %Y-%m-%d   %H:%M:%S"
+        format = " %Y-%m-%d   %H:%M:%S"
 }
 
 cpu_usage {
-	format = " %usage"
+	format = "  %usage"
 	max_threshold = 70
 }
 
 volume master{
-        format = "墳 %volume"
-        format_muted = "婢 (%volume)"
+        format = "󰕾 %volume"
+        format_muted = "󰝟 (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0

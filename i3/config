@@ -117,7 +117,7 @@ bar {
 	tray_output primary
 	tray_padding 4
 	font pango:DejaVuSans, FontAwesome 10 
-	separator_symbol ""
+	separator_symbol ""
 	colors {
 		#background #222222ff
 		background #3c3836
@@ -135,5 +135,7 @@ smart_borders on
 exec_always --no-startup-id autotiling
 exec nitrogen --restore
 exec ./mouse.sh
-client.focused #83a598 #83a598 #83a598 #83a598[
-exec --no-startup-id picom
+client.focused #83a598 #83a598 #83a598 #83a598
+exec picom
+exec xrandr --output HDMI-A-0 --rate 144 --mode 1920x1080
+exec syncthing
