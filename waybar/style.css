@@ -1,0 +1,39 @@
+* {
+    border: none;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: 'Fira Code', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    min-height: 20px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+
+#custom-arch, #workspaces {
+   border-radius: 10px;
+   background-color: #2e3440;
+   font-size: 20px;
+   margin-left: 6px;
+   color: #eceff4;
+   margin-top: 6px;
+}
+
+
+#workspaces button {
+    background-color: #2e3440;
+    color: #eceff4;
+}
+
+#clock,#network, #pulseaudio, #cpu, #memory {
+  border-radius: 10px;
+  background-color: #2e3440;
+  color: #eceff4;
+  margin-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 6px;
+}
+
