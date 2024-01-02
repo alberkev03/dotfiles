@@ -1,5 +1,5 @@
-# Catppuccino-dotfiles
-My dotfiles for my Arch Linux system. Feel free to use, modify and share them.  
+# Catppuccin-dotfiles
+My dotfiles for my Arch Linux system. Feel free to use, modify and share them. I use the "Macchiato" color pallete, mostly because of being a mix between too saturated and too desaturated that feels comfy and easy to watch. Enjoy!
 ## Screenshots
 ![screenshots/2024-01-02-144859_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-144859_hyprshot.png)
 ![screenshots/2024-01-02-145016_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-145016_hyprshot.png)
@@ -10,14 +10,19 @@ Copy the folders into the .config directory. Hyprland, Rofi, and Neofetch will u
 ## Dependencies
 
 * [Hyprland](https://hyprland.org/) - Window Manager
-
 * [Hyprpaper](https://github.com/hyprwm/hyprpaper) - Wallpaper Manager
 * [Waybar-hyprland](https://github.com/Alexays/Waybar) - Top Bar
 * [Kitty](https://github.com/kovidgoyal/kitty) - Terminal
 * [ZSH](https://ohmyz.sh/) - shell with Starship theme
 * [Neofetch](https://github.com/dylanaraps/neofetch) - Information about my system
 * [Rofi](https://github.com/davatorium/rofi) - Packages and power menu
+* [Catppuccin](https://github.com/catppuccin/gtk) - Theme for GTK
 * Awesome/Nerd Fonts/Fira Code - Fonts
+### Opcional
+[Ranger](https://github.com/ranger/ranger) - Terminal File Manager
+Spotify - Music client. Works great with the music complement in waybar
 
 ## What to do next
 I'll try to make a script to automatically install every dotfile and restart the packages, but I don't know how to do that yet. I'm not a programmer, I just like linux, computers and spending (wasting?) time with them. 
+## Troubleshooting
+If something go bad (probably it will, because it's my first "proyect"), sadly I can't do much. As I said earlier, I don't do programming and every computer is a different world, so I may not be able to fix it. If that happens: Sorry, really!
