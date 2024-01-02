@@ -10,7 +10,7 @@ My dotfiles for my Arch Linux system. Feel free to use, modify and share them. I
 * Catppuccin color scheme
 * It's very cool
 # Important
-While almost everything will probably "just works", some things like the screen resolution and the refresh rate may not work. You need to edit the hyprland config file to adjust to your needs.
+While almost everything will probably "just works", some things like the screen resolution and the refresh rate may not work according to your specs. You need to tweaks some dotfiles to adjust to your needs.
 # How to install
 Copy the folders into the .config directory. Hyprland, Rofi, and Neofetch will update instantly or every time you open them, but for other packages you should restart them. I use pkill or killall to stop the package, and then open it again with rofi. 
 
