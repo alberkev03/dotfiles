@@ -7,7 +7,7 @@ My dotfiles for my Arch Linux system. Feel free to use, modify and share them. I
 # How to install
 Copy the folders into the .config directory. Hyprland, Rofi, and Neofetch will update instantly or every time you open them, but for other packages you should restart them. I use pkill or killall to stop the package, and then open it again with rofi. 
 
-## Dependencies
+## Programs used
 
 * [Hyprland](https://hyprland.org/) - Window Manager
 * [Hyprpaper](https://github.com/hyprwm/hyprpaper) - Wallpaper Manager
