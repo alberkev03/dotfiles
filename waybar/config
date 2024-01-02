@@ -5,12 +5,13 @@
     // "width": 1080, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["clock", "calendar", "network"],
-    "modules-right": ["keyboard-state", "pulseaudio", "cpu", "memory", "temperature"],
+    "modules-center": ["custom/spotify"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network", "clock", "custom/updates"],
 
 	
      "custom/arch": {
-	 "format": "<span color='#88c0d0'>  󰣇  </span>",
+	 "format": "<span color='#8aadf4'>  󰣇  </span>",
+	 "on-click": "~/.config/rofi/powermenu/type-1/powermenu.sh",
 	 "tooltip": false,
      },
     "hyprland/workspaces": {
@@ -19,8 +20,8 @@
          "warp-on-scroll": true,
          "format": "{icon}",
          "format-icons": {
-	     "active": "",
-             "default": ""
+	     "active": "<span color='#cad3f5'></span>",
+             "default": "<span color='#cad3f5'></span>"
          }
      },
     "keyboard-state": {
@@ -41,20 +42,20 @@
     },
     
     "clock": {
-    "format": "<span color='#88c0d0'> </span>{:%H:%M}",
+    "format": "<span color='#8bd5ca'> </span>{:%H:%M}",
     },
     
 
-    "calendar": {
+    "custom/calendar": {
         // "timezone": "America/New_York",
-        "format": "{:%Y-%m-%d}"
+        "format": "{:%Y-%m-%d}",
     },
     "cpu": {
-        "format": "{usage}% <span color='#d08770'></span>",
+        "format": "{usage}% <span color='#f5a97f'></span>",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% <span color='#ebcb8b'></span>"
+        "format": "{}% <span color='#eed49f'></span>"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -67,15 +68,16 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "<span color='#a3be8c'>󰢾</span>",
+        "format-ethernet": "<span color='#a6da95'>󰢾</span>",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "<span color='#bf616a'>󰢿</span>",
+        "format-disconnected": "<span color='#ed8796'>󰢿</span>",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         "scroll-step": 3, // %, can be a float
         "format": "{icon} {volume}%",
+	"format-muted": "󰖁 {volume}%",
           "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -84,20 +86,27 @@
             "portable": "",
             "car": "",
             "default": ["", "", ""]
+	    },
+	    "scroll-step": 3,
+	    "on-click": "pavucontrol",
         },
-        "on-click": "pavucontrol"
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+   "custom/updates": {
+       "format": "{} {icon}",
+       "return-type": "json",
+       "format-icons": {
+           "has-updates": "󱍷",
+           "updated": "󰂪"
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates"
+       },
+    "custom/spotify": {
+    "exec": "/usr/bin/python3 $HOME/.config/waybar/mediaplayer.py",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+},
 }
 

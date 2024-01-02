@@ -14,7 +14,7 @@ window#waybar {
 
 #custom-arch, #workspaces {
    border-radius: 10px;
-   background-color: #2e3440;
+   background-color: #24273a;
    font-size: 20px;
    margin-left: 6px;
    color: #eceff4;
@@ -23,14 +23,14 @@ window#waybar {
 
 
 #workspaces button {
-    background-color: #2e3440;
+    background-color: #24273a;
     color: #eceff4;
 }
 
-#clock,#network, #pulseaudio, #cpu, #memory {
+#custom-spotify, #clock, #custom-updates,#network, #pulseaudio, #cpu, #memory {
   border-radius: 10px;
-  background-color: #2e3440;
-  color: #eceff4;
+  background-color: #24273a;
+  color: #cad3f5;
   margin-top: 6px;
   padding-left: 10px;
   padding-right: 10px;
