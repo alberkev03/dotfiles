@@ -1,8 +1,14 @@
 # Catppuccin-dotfiles
+## About
 My dotfiles for my Arch Linux system. Feel free to use, modify and share them. I use the "Macchiato" color pallete, mostly because of being a mix between too saturated and too desaturated that feels comfy and easy to watch. Enjoy!
 ## Screenshots
 ![screenshots/2024-01-02-144859_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-144859_hyprshot.png)
 ![screenshots/2024-01-02-145016_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-145016_hyprshot.png)
+## Feautures
+* Similar key bindings from i3 window manager
+* Easy to read and use
+* Catppuccin color scheme
+* It's very cool
 
 # How to install
 Copy the folders into the .config directory. Hyprland, Rofi, and Neofetch will update instantly or every time you open them, but for other packages you should restart them. I use pkill or killall to stop the package, and then open it again with rofi. 
@@ -26,13 +32,14 @@ Spotify - Music client. Works great with the music complement in waybar
 ### Some useful key bindings
 Note: I use "Windows" key because it's more easy to abbreviate and I'm used to it.
 ```
-Win + D - open rofi menu
+Win + D - App launcher
 ```
 ```
-Win + Shift + E - logout menu (also clicking the Arch logo in the bar)
+Win + Shift + E - logout menu
 ```
-
-
+```
+Win + F - Fullscreen
+```
 ## What to do next
 I'll try to make a script to automatically install every dotfile and restart the packages, but I don't know how to do that yet. I'm not a programmer, I just like linux, computers and spending (wasting?) time with them. 
 ## Troubleshooting
