@@ -19,8 +19,19 @@ Copy the folders into the .config directory. Hyprland, Rofi, and Neofetch will u
 * [Catppuccin](https://github.com/catppuccin/gtk) - Theme for GTK
 * Awesome/Nerd Fonts/Fira Code - Fonts
 ### Opcional
-[Ranger](https://github.com/ranger/ranger) - Terminal File Manager
+[Ranger](https://github.com/ranger/ranger) - Terminal File Mananext
+
 Spotify - Music client. Works great with the music complement in waybar
+
+### Some useful key bindings
+Note: I use "Windows" key because it's more easy to abbreviate and I'm used to it.
+```
+Win + D - open rofi menu
+```
+```
+Win + Shift + E - logout menu (also clicking the Arch logo in the bar)
+```
+
 
 ## What to do next
 I'll try to make a script to automatically install every dotfile and restart the packages, but I don't know how to do that yet. I'm not a programmer, I just like linux, computers and spending (wasting?) time with them. 
