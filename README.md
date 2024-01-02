@@ -4,7 +4,7 @@ My dotfiles for my Arch Linux system. Feel free to use, modify and share them. I
 ## Screenshots
 ![screenshots/2024-01-02-144859_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-144859_hyprshot.png)
 ![screenshots/2024-01-02-145016_hyprshot.png](https://github.com/Heroe86535/dotfiles/blob/main/screenshots/2024-01-02-145016_hyprshot.png)
-## Feautures
+## Features
 * Similar key bindings from i3 window manager
 * Easy to read and use
 * Catppuccin color scheme
@@ -31,6 +31,10 @@ Spotify - Music client. Works great with the music complement in waybar
 
 ### Some useful key bindings
 Note: I use "Windows" key because it's more easy to abbreviate and I'm used to it.
+```
+Win + Return - Open the terminal (kitty)
+```
+
 ```
 Win + D - App launcher
 ```
