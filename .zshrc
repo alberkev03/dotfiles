@@ -98,3 +98,6 @@ alias cat="bat"
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"
+$(thefuck --alias)
+
+eval $(thefuck --alias)
