@@ -9,6 +9,7 @@ window#waybar {
     color: #cdd6f4;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 0 0 14 14;
 }
 #custom-arch {
     background-color: #89b4fa;
