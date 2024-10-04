@@ -42,7 +42,7 @@
     },
     
     "clock": {
-    "format": "   {:%H:%M}",
+    "format": " {:%H:%M}",
     },
     
 
@@ -51,11 +51,11 @@
         "format": "{:%Y-%m-%d}",
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "󰘚  {}%"
+        "format": "󰘚 {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -68,7 +68,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "󰢾  Connected",
+        "format-ethernet": "󰢾 Connected",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰢿 Disconnected",
@@ -76,8 +76,8 @@
     },
     "pulseaudio": {
         "scroll-step": 3, // %, can be a float
-        "format": "{icon} {volume}%",
-	"format-muted": "󰖁  {volume}%",
+        "format": "{icon}{volume}%",
+	"format-muted": "󰖁 {volume}%",
           "format-icons": {
             "headphone": "",
             "hands-free": "",
