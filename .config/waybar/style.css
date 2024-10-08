@@ -14,7 +14,7 @@ window#waybar {
 #custom-arch {
     background-color: #89b4fa;
     color: #1e1e2e;
-    border-radius: 10;
+    border-radius: 6;
     font-size: 20px;
     padding-right: 4px;
     margin-left: 4px;
@@ -34,7 +34,7 @@ window#waybar {
 }
 #custom-spotify, #pulseaudio, #cpu, #memory, #network, #clock {
   border-radius: 10;
-    margin-right: 4px;
+    margin-right: 6px;
     padding-left: 6px;
     padding-right: 6px;
 }

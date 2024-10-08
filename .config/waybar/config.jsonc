@@ -42,7 +42,7 @@
     },
     
     "clock": {
-    "format": " {:%H:%M}",
+    "format": "  {:%H:%M}",
     },
     
 
@@ -85,7 +85,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [" ", " ", " "]
+            "default": ["", "", ""]
 	    },
 	    "scroll-step": 3,
 	    "on-click": "pavucontrol",
