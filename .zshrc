@@ -92,9 +92,9 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch $(uname -m)"
 
 #####Personal Aliases######
-alias btw="neofetch"
+alias btw="fastfetch"
 alias cat="bat"
-
+alias rm="trash"
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"
