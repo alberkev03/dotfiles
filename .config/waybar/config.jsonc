@@ -43,6 +43,7 @@
     
     "clock": {
     "format": "  {:%H:%M}",
+    "format-alt": "  {:%d-%m-%Y}"
     },
     
 
@@ -51,7 +52,7 @@
         "format": "{:%Y-%m-%d}",
     },
     "cpu": {
-        "format": " {usage}%",
+        "format": "  {usage}%",
         "tooltip": false
     },
     "memory": {
@@ -68,10 +69,10 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "󰢾 Connected",
+        "format-ethernet": "󰢾  Connected",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󰢿 Disconnected",
+        "format-disconnected": "󰢿  Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
@@ -85,7 +86,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [" ", " ", "  "]
 	    },
 	    "scroll-step": 3,
 	    "on-click": "pavucontrol",

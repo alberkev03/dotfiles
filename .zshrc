@@ -95,6 +95,15 @@ source $ZSH/oh-my-zsh.sh
 alias btw="fastfetch"
 alias cat="bat"
 alias rm="trash"
+alias rmorphans="pacman -Qtdq | sudo pacman -Rns -"
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"
+fastfetch
+
+# bun completions
+[ -s "/home/kevin/.bun/_bun" ] && source "/home/kevin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
