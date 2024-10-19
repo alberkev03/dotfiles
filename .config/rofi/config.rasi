@@ -30,4 +30,6 @@ configuration{
 
 //@theme "/home/kevin/.local/share/rofi/themes/catppuccin-mocha.rasi"
 
-@theme "/usr/share/rofi/themes/tokyonight.rasi"
+//@theme "/usr/share/rofi/themes/tokyonight.rasi"
+
+@theme "/home/kevin/.local/share/rofi/themes/simple-tokyonight.rasi"

@@ -99,6 +99,7 @@ alias rmorphans="pacman -Qtdq | sudo pacman -Rns -"
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"
+eval $(thefuck --alias) 
 fastfetch
 
 # bun completions
