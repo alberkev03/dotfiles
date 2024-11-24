@@ -96,6 +96,7 @@ alias btw="fastfetch"
 alias cat="bat"
 alias rm="trash"
 alias rmorphans="pacman -Qtdq | sudo pacman -Rns -"
+alias btw --noconfig="fastfetch --config" 
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"

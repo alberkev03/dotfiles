@@ -32,4 +32,10 @@ configuration{
 
 //@theme "/usr/share/rofi/themes/tokyonight.rasi"
 
+//@theme "/home/kevin/.local/share/rofi/themes/simple-tokyonight.rasi"
+
+//@theme "/home/kevin/.local/share/rofi/themes/spotlight-dark.rasi"
+
+//@theme "/usr/share/rofi/themes/tokyonight.rasi"
+
 @theme "/home/kevin/.local/share/rofi/themes/simple-tokyonight.rasi"

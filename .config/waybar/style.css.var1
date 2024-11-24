@@ -1,0 +1,58 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrains Mono, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: #1a1b26;
+    color: #a9b1d6;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 2px solid #7aa2f7;
+}
+
+#custom-arch:hover{
+    background-color: #5784EB;
+}
+
+#workspaces {
+    color: #a9b1d6;
+    border-radius: 10;
+    font-size: 13px;
+    padding-right: 3px;
+}
+#workspaces:hover{
+    background-color: transparent;
+}
+
+#custom-spotify, #pulseaudio, #cpu, #memory, #network {
+  border-radius: 10;
+    margin-right: 6px;
+    padding: 6px 6px;
+}
+
+#custom-spotify {
+    color: #9ece6a;
+}
+
+#pulseaudio {
+    color: #bb9af7;
+}
+
+#cpu {
+    color: #f7768e;
+}
+
+#memory {
+    color: #ff9e64;
+}
+
+#network {
+    color: #e0af68;
+}
+
+#clock {
+    margin: 0 10px;
+    color: #73daca;
+}

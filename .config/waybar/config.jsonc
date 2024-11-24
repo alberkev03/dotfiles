@@ -3,10 +3,11 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 20, // Waybar height (to be removed for auto height)
     "width": 1920, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["custom/spotify"],
-    "modules-right": ["pulseaudio", "cpu", "memory", "network", "clock", "custom/updates"],
+    "margin": 4,
+    "spacing": 0, // Gaps between modules (4px)
+    "modules-left": ["clock", "hyprland/workspaces", "custom/spotify"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network", "custom/updates"],
 
 	
      "custom/arch": {
@@ -42,8 +43,8 @@
     },
     
     "clock": {
-    "format": " {:%H:%M}",
-    "format-alt": " {:%d-%m-%Y}"
+    "format": " {:%H:%M  %d-%m-%Y}", 
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     
 
