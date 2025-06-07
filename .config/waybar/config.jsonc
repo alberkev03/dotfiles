@@ -2,12 +2,12 @@
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 20, // Waybar height (to be removed for auto height)
-    "width": 1920, // Waybar width
+    "width": 1914, // Waybar width
     "margin": 4,
     "spacing": 0, // Gaps between modules (4px)
-    "modules-left": ["clock", "hyprland/workspaces", "custom/spotify"],
-    "modules-center": [],
-    "modules-right": ["pulseaudio", "cpu", "memory", "network", "custom/updates"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/spotify"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network", "custom/updates", "clock"],
 
 	
      "custom/arch": {

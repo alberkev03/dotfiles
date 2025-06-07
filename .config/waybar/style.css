@@ -1,47 +1,35 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
+    font-family: JetBrains Mono, Helvetica, Awesome;
     font-size: 16px;
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: #1a1b26;
     color: #a9b1d6;
-    transition-property: background-color;
-    transition-duration: .5s;
+    border-radius: 8px 8px;
 }
 
 #workspaces {
     color: #a9b1d6;
-    background-color: #1a1b26;
-    border-radius: 0 10 10 0;
-    font-size: 13px;
-    margin: 0 10 0 0;
-    padding: 0 14 0 10;
-}
-#workspaces:hover{
-    background-color: #1a1b26;
+  font-size: 13px;
+    margin: 6px;
 }
 
 #cpu, #memory {
     background-color: #1a1b26;
-    border-radius: 0;
     margin: 0;
     padding: 4 12;
 }
 
-#clock, #pulseaudio {
+#pulseaudio {
     margin: 0 0 0 10;
     padding: 0 10;
-    border-radius: 10 0 0 10;
-    background-color: #1a1b26;
 }
 
 #custom-spotify {
     color: #9ece6a;
-    background-color: #1a1b26;
-    border-radius: 10;
-    margin: 0 10 0 0;
+  margin: 0 10 0 0;
     padding: 0 10;
 }
 
@@ -59,12 +47,11 @@ window#waybar {
 
 #network {
     color: #e0af68;
-    background-color: #1a1b26;
-    border-radius: 0 10 10 0;
-    margin: 0 10 0 0;
+  margin: 0 10 0 0;
     padding: 0 10;
 }
 
 #clock {
     color: #73daca;
+    margin: 0 16px 0 0;
 }

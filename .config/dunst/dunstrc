@@ -1,8 +1,18 @@
 [global]
 frame_color = "#89b4fa"
 separator_color= frame
-
-
+width = 500
+height = (100, 100)
+origin = top-center
+offset = (42, 0)
+frame_width = 1
+gap_size = 4
+font = "JetBrains Mono 10"
+format = "<b><span text_transform="capitalize">%a</span></b>\n%s"
+vertical_alignment = top
+show_age_threshold = 5
+icon_theme = "Papirus"
+corner_radius = 8
 
 [urgency_low]
 background = "#1e1e2e"

@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship" # set by `omz`
+ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,16 +99,17 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch $(uname -m)"
 
 #####Personal Aliases######
-alias btw="fastfetch"
+# alias btw="fastfetch"
 alias cat="bat"
 alias rm="trash"
 alias rmorphans="pacman -Qtdq | sudo pacman -Rns -"
-alias btw --noconfig="fastfetch --config" 
+alias btw --noconfig="fastfetch --config"
+alias fucking="sudo"
 
 ###### Miscelanius config ####
 eval "$(zoxide init zsh)"
 eval $(thefuck --alias) 
-fastfetch
+# fastfetch
 
 # bun completions
 [ -s "/home/kevin/.bun/_bun" ] && source "/home/kevin/.bun/_bun"
@@ -109,3 +117,11 @@ fastfetch
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Created by `pipx` on 2025-01-01 13:57:46
+export PATH="$PATH:/home/kevin/.local/bin"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+PATH=~/.console-ninja/.bin:$PATH
